@@ -1,0 +1,144 @@
+@import url("reset.css");
+
+html {
+    height: 100%;
+  }
+  body {
+    min-height: 100%;
+  }
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 538px 25% 5%;
+}
+
+/* Main Section Styling */
+
+/* Nav Styling */
+
+.grid-container main {
+    grid-column: 1 / -1;
+    grid-row: 1 / 2;
+    background: url("https://web.archive.org/web/20140301004302im_/http://images.apple.com/v/home/as/images/your_verse_hero.jpg") 50% 100% no-repeat;
+    display: grid;
+}
+
+nav {
+    justify-self: center;
+}
+
+nav ul {
+    margin-top: 5rem;
+    display: flex;
+    width: 980px;
+    height: 36px;
+    justify-content: space-around;
+    background-image: linear-gradient(0deg, #6c6c6c, #505050 50%, #646764 50%, #848484 100%);
+    border-radius: 5px;
+}
+
+nav ul li {
+    align-self: center;
+    justify-self: center;
+    border-right: 1px;
+    border-right: solid;
+    border-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAABCAQAAABTNcdGAAAAEUlEQVQIHWP4r8bA8F+KwQEADZUCf37PGokAAAAASUVORK5CYII=) 0 2 0 1 stretch stretch;
+    padding: 9px 35px 9px 35px;
+}
+
+li a {
+    text-decoration: none;
+    color: white;
+    font: 12px/18px "Lucida Grande", "Lucida Sans Unicode", Helvetica, Arial, Verdana, sans-serif;
+}
+
+li.search {
+    border: none;
+}
+
+/* Main Paragraph Styling */
+
+p.item-1 {
+    margin-top: -3rem;
+    justify-self: center;
+    font-weight: 100;
+    font-family: sans-serif;
+    font-size: 60px;
+    color: white;
+    opacity: 85%;
+}
+
+p.item-2 {
+    justify-self: center;
+    font-family: sans-serif;
+    font-size: 27px;
+    text-align: center;
+    color: white;
+    font-weight: 100;
+    margin-top: -4rem;
+    opacity: 85%;
+}
+
+div.item-3 {
+    margin-top: -5rem;
+    justify-self: center;
+    font-family: sans-serif;
+    color: white;
+    font-weight: 100;
+    font-size: 23px;
+    opacity: 85%;
+}
+
+/* Thumbnails Styling */
+section {
+    grid-row: 2 / 3;
+    grid-column: 1 / -1;
+    width: 100%;
+    height: 100%;
+}
+
+.thumbnails ul {
+    display: flex;
+}
+
+/* Footer Styling */
+footer {
+    grid-row: 3 / 4;
+    grid-column: 1 / -1;
+    display: grid;
+    grid-template-columns: 15% 1fr 1fr 15%;
+    grid-gap: 20px;
+    grid-template-rows: 1fr 1fr;
+}
+
+.footer {
+    margin-top: .5rem;
+    color: #6e6e6e;
+    font-size: .8334em;
+    line-height: 1.2;
+    font-family: sans-serif;
+}
+
+.f-item-1 {
+    grid-column: 2;
+    grid-row: 1;
+}
+
+.f-item-2 {
+    grid-column: 3;
+    grid-row: 1;
+
+}
+
+.f-item-3 {
+    margin: 0;
+    align-self: center;
+    grid-column: 2;
+    grid-row: 2;
+}
+
+footer a {
+    text-decoration: none;
+    color: #0088CC;
+}
